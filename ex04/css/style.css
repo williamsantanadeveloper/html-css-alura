@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    background-color: #000;
+    align-items: center;
+}
+
+header,
+main,
+footer {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 30rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text {
+    color: #fff;
+}

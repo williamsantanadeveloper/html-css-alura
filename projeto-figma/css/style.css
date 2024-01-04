@@ -3,6 +3,8 @@
 }
 
 body {
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #000;
     /* background-color: #ff5733; */
     /* background-color: #00ff00; */
@@ -27,12 +29,14 @@ strong {
     color: #22D4FD;
 }
 
-main {
+.main-container {
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 a {
-
     text-decoration: none;
     background-color: #22D4FD;
     color: #000000;
