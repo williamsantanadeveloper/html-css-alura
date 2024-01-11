@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     background-color: #000;
-    /* background-color: #ff5733; */
-    /* background-color: #00ff00; */
+}
+
+:root {
+    --color-principal: #E7DFD5;
+    --color-secondary: #84A9AC;
+    --color-third: #3B6978;
+    --color-hover: #204051;
+    --font-primary: 'Krona One', sans-serif;
+    --font-secundary: 'Montserrat', sans-serif;
 
 }
 
@@ -22,7 +28,7 @@ body {
 
 .home,
 .about {
-    color: #22D4FD;
+    color: var(--color-third);
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -39,12 +45,12 @@ h1 {
 h1,
 h2,
 p {
-    color: #f6f6f6;
+    color: var(--color-secondary);
 }
 
 
 .text-blue {
-    color: #22D4FD;
+    color: var(--color-third);
 }
 
 .main-container {
@@ -56,12 +62,12 @@ p {
 
 .text-principal {
     font-size: 3.6rem;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-primary);
 }
 
 .text-description {
     font-size: 2.4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundary);
 }
 
 .area-content {
@@ -79,8 +85,13 @@ p {
     align-items: center;
 }
 
+.image {
+    border-radius: 100%;
+    width: 60rem;
+}
+
 .text-social {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-primary);
     font-size: 2.4rem;
     font-weight: 400;
 }
@@ -89,33 +100,33 @@ p {
     display: flex;
     justify-content: center;
     gap: 16px;
-    background-color: #000;
+    background-color: var(--color-principal);
     width: 38.1rem;
     text-align: center;
     border-radius: 0.8rem;
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD;
+    color: var(--color-secondary);
+    font-family: var(--font-secundary);
+    border: 2px solid var(--color-third);
 }
 
 .text-link:hover {
     cursor: pointer;
-    background-color: #272727;
+    background-color: var(--color-hover);
     padding: 3%;
 }
 
 .rodape {
     padding: 28px;
-    background-color: #22D4FD;
+    background-color: var(--color-third);
     text-align: center;
 }
 
 .text-footer {
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-principal);
+    font-family: var(--font-secundary);
     font-size: 25px;
     font-weight: 400;
 }
