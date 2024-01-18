@@ -16,9 +16,7 @@ body {
 }
 
 .heading {
-    width: 29.9rem;
     padding: 2% 0% 0% 15%;
-    text-align: center;
 }
 
 .menu {
@@ -54,6 +52,7 @@ p {
 
 .main-container {
     padding: 6% 15%;
+    gap: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +69,7 @@ p {
 }
 
 .area-content {
-    width: 61.5rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -85,8 +84,7 @@ p {
 }
 
 .image {
-    border-radius: 100%;
-    width: 60rem;
+    width: 50%;
 }
 
 .text-social {
@@ -100,7 +98,7 @@ p {
     justify-content: center;
     gap: 16px;
     background-color: var(--color-principal);
-    width: 38.1rem;
+    width: 50%;
     text-align: center;
     border-radius: 0.8rem;
     font-size: 1.5rem;
@@ -128,4 +126,24 @@ p {
     font-family: var(--font-secundary);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+
+@media (max-width: 1200px) {
+    .heading {
+        padding: 10%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .area-content {
+        width: auto;
+    }
 }
