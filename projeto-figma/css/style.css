@@ -85,6 +85,7 @@ p {
 
 .image {
     width: 50%;
+    border-radius: 100%;
 }
 
 .text-social {
@@ -128,7 +129,7 @@ p {
     font-weight: 400;
 }
 
-
+/* versão mobile */
 @media (max-width: 1200px) {
     .heading {
         padding: 10%;
